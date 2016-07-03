@@ -1,15 +1,27 @@
-import time; import random; import sys
+import time; import random; import sys;
+# import for later code
+
+def 
 
 req_version = (3,0)
 cur_version = sys.version_info
 
 if cur_version < req_version:
-    print('You are using an unsupported version of Python. Type help() into your interpreter.')
+    print('-------------------------------------------------------')
+    print('You are using an unsupported version of Python.')
+    print('-------------------------------------------------------')
+
+    time.sleep(2)
+    print('Type help() into your interpreter.')
+    print('-------------------------------------------------------')
     time.sleep(2)
 
     print('If a version before 2.7 appears, then install Python 3.')
+    print('-------------------------------------------------------')
+
     print('Use the Python launcher which comes with Python 3.')
     time.sleep(2)
+    print('-------------------------------------------------------')
 
     print('Use the python3 command on macOS (or OS X)')
     quit()
