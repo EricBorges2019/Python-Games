@@ -6,9 +6,7 @@ req_version = (3,0)
 cur_version = sys.version_info
 
 if cur_version < req_version:
-    print('*******************************************')
-    print('THIS PROGRAM ONLY RUNS IN PYTHON 3 AND UP’)
-    print('*******************************************')
+    print('You are using an unsupported version of Python. Please run this with Python 3.')
 
 guessesTaken = 0
 #preparing some of the code for later
