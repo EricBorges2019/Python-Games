@@ -7,7 +7,7 @@ cur_version = sys.version_info
 
 if cur_version < req_version:
     print('*******************************************')
-    print('THIS PROGRAM ONLY RUNS IN PYTHON 3 AND UP)
+    print('THIS PROGRAM ONLY RUNS IN PYTHON 3 AND UP’)
     print('*******************************************')
 
 guessesTaken = 0
