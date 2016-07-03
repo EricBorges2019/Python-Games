@@ -1,33 +1,46 @@
-# -*- coding: utf-8 -*-
-#This program greets itself and asks for your name
 import time; import random; import sys
 
 req_version = (3,0)
 cur_version = sys.version_info
 
 if cur_version < req_version:
-    print('You are using an unsupported version of Python. Please run this with Python 3.')
+    print('You are using an unsupported version of Python. Type help() into your interpreter.')
+    time.sleep(2)
+
+    print('If a version before 2.7 appears, then install Python 3.')
+    print('Use the Python launcher which comes with Python 3.')
+    time.sleep(2)
+
+    print('Use the python3 command on macOS (or OS X)')
+    quit()
 
 guessesTaken = 0
 #preparing some of the code for later
-time.sleep(2.5)
+time.sleep(2)
+
 print('                                          ')
 print('Hello there!')
 time.sleep(1)
 #delay
+
 print('What is your name? (type name)')
 playerName = input()
 time.sleep(2)
+
 print('Glad to meet you, ' + playerName + '!')
 time.sleep(2)
+
 number = random.randint(2, 19)
 print('I am thinking of a number between 1 and 20.')
 time.sleep(2)
+
 guessesLeft = 6 - guessesTaken
 guessesLeft = str(guessesLeft)
 time.sleep(2)
+
 print('You have ' + guessesLeft + ' guesses left.')
 time.sleep(2)
+
 while guessesTaken < 6:
     print('Type in your guess!')
     guess = input()
@@ -41,7 +54,7 @@ while guessesTaken < 6:
 
 
     if guess > 20:
-        print('It only goes up to 20, okay?')
+        print("You're supposed to guess between 1 and 20, silly!")
 
     if guess < 0:
         print('The number is not below 0, alright?')
@@ -70,5 +83,3 @@ if guess != number:
     print('Sorry! The number was ' + number + '.')
 
 print('Thanks for playing!')
-
-print('GAME OVER')
