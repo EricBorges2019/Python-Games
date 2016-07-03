@@ -1,11 +1,17 @@
 # -*- coding: utf-8 -*-
 #This program greets itself and asks for your name
-import time; import random
+import time; import random; import sys
+
+req_version = (3,0)
+cur_version = sys.version_info
+
+if cur_version < req_version:
+    print('*******************************************')
+    print('THIS PROGRAM ONLY RUNS IN PYTHON 3 AND UP)
+    print('*******************************************')
+
 guessesTaken = 0
 #preparing some of the code for later
-#print('*******************************************')
-#print('THIS PROGRAM ONLY RUNS IN PYTHON 3 AND UP')
-#print('*******************************************')
 time.sleep(2.5)
 print('                                          ')
 print('Hello there!')
