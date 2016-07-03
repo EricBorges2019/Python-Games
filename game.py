@@ -25,14 +25,14 @@ time.sleep(2)
 print('You have ' + guessesLeft + ' guesses left.')
 time.sleep(2)
 while guessesTaken < 6:
-    print('Take a guess! (type guess)')
+    print('Take a guess! (type in your guess)')
     guess = input()
     try:
         guess = int(guess)
     except ValueError:
         print('Oops! Only type in numbers, please!')
         continue
-
+#In case someone types in a word or literally "guess"
     guessesTaken = guessesTaken + 1
 
 
@@ -42,18 +42,20 @@ while guessesTaken < 6:
     if guess < 0:
         print('The number is not below 0, alright?')
 #berating the player for guessing over the boundaries
+
+
     if guess < number:
         print('Too low.')
 
 
 
-    if guess > number:        
+    if guess > number:
         print ('Too high.')
-        
+#feedback for the player
 
     if guess == number:
         break
-    
+#break the feedback loop and start the "YOU WON text"
 
 if guess == number:
     guessesTaken = str(guessesTaken)
@@ -61,6 +63,6 @@ if guess == number:
 
 if guess != number:
     number = str(number)
-    print('Nope. The number was ' + number + '.')
-    
+    print('Sorry! The number was ' + number + '.')
+
 print('GAME OVER')
