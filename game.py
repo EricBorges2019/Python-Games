@@ -3,29 +3,27 @@
 import time; import random
 guessesTaken = 0
 #preparing some of the code for later
-print('************************************************')
-print('THIS PROGRAM ONLY RUNS IN PYTHON 3 AND UP')
-print('USE THE "python3" COMMAND if you can to run this')
-print('************************************************')
+#print('*******************************************')
+#print('THIS PROGRAM ONLY RUNS IN PYTHON 3 AND UP')
+#print('*******************************************')
 time.sleep(2.5)
 print('                                          ')
 print('Hello there!')
 time.sleep(1)
-#delay so it feigns typing
+#delay
 print('What is your name? (type name)')
 playerName = input()
 time.sleep(2)
 print('Glad to meet you, ' + playerName + '!')
 time.sleep(2)
-print('I wanted to try a game with you.')
-time.sleep(2)
-number = random.randint(1, 20)
+number = random.randint(2, 19)
 print('I am thinking of a number between 1 and 20.')
 time.sleep(2)
 guessesLeft = 6 - guessesTaken
 guessesLeft = str(guessesLeft)
 time.sleep(2)
 print('You have ' + guessesLeft + ' guesses left.')
+time.sleep(2)
 while guessesTaken < 6:
     print('Take a guess! (type guess)')
     guess = input()
