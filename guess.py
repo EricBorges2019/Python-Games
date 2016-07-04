@@ -10,31 +10,14 @@ cur_version = sys.version_info
 
 if cur_version < req_version:
 
-	print('You are using an unsupported version of Python.')
+	print("You are using an outdated version of Python.")
 	longLine()
-	wait(2)
-
-	print('Type help() into your interpreter.')
-	longLine()
-	wait(2)
-
-	print('If a version before 2.7 appears, then install Python 3.')
-	longLine()
-	wait(2)
-
-	print('Use the Python launcher which comes with Python 3.')
-	longLine()
-	wait(2)
-
-	print('Use the python3 command on macOS (OS X)')
 	wait(2)
 	print("									   ")
 	quit()
 # check for correct version of Python
 
 guessesTaken = 0
-wait(2)
-
 print('										  ')
 print('Hello there!')
 wait(1)
@@ -67,8 +50,8 @@ while guessesTaken < 6:
 		print('Oops! Only type in numbers, please!')
 		continue
 #Berating the player for not typing in a number
-	guessesTaken = guessesTaken + 1
 
+	guessesTaken = guessesTaken + 1
 
 	if guess > 20:
 		print("You're supposed to guess between 1 and 20, silly!")
@@ -77,11 +60,8 @@ while guessesTaken < 6:
 		print('The number is not below 0, alright?')
 #berating the player for guessing over the boundaries
 
-
 	if guess < number:
 		print('Too low.')
-
-
 
 	if guess > number:
 		print ('Too high.')
@@ -98,5 +78,6 @@ if guess == number:
 if guess != number:
 	number = str(number)
 	print('Sorry! The number was ' + number + '.')
+#Game over
 
 print('Thanks for playing!')
