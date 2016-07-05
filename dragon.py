@@ -2,33 +2,19 @@ import time; import random; import sys;
 # import for later code
 
 def longLine():
-    print('_______________________________________________________')
+	print('-------------------------------------------------------')
 def wait(delayTime):
-    time.sleep(delayTime)
+	time.sleep(delayTime)
 req_version = (3,0)
 cur_version = sys.version_info
 
 if cur_version < req_version:
-        print('You are using an unsupported version of Python.')
-        longLine()
-        wait(2)
 
-        print('Type help() into your interpreter.')
-        longLine()
-        wait(2)
-
-        print('If a version before 2.7 appears, then install Python 3.')
-        longLine()
-        wait(2)
-
-        print('Use the Python launcher which comes with Python 3.')
-        longLine()
-        wait(2)
-
-        print('Use the python3 command on macOS (OS X)')
-        wait(2)
-        print("   ")
-        quit()
+	print("You are using an outdated version of Python.")
+	longLine()
+	wait(2)
+	print("									   ")
+	quit()
 # check for correct version of Python
 
 def displayIntro():
@@ -74,7 +60,7 @@ while playAgain == 'yes' or playAgain == 'y':
     caveNumber = chooseCave()
 
     checkCave(caveNumber)
-    
+
     wait(2)
     print('Do you want to play again? (yes or no)')
     playAgain = input()

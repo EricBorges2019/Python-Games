@@ -9,10 +9,10 @@ req_version = (3,0)
 cur_version = sys.version_info
 
 if cur_version < req_version:
-	outdated = sys.version_info
-	print("You are using the wrong version of Python.")
+
+	print("You are using an outdated version of Python.")
 	longLine()
-	wait(1)
+	wait(2)
 	print("									   ")
 	quit()
 # check for correct version of Python
