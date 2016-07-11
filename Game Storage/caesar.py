@@ -10,17 +10,11 @@ def wait(delayTime):
 req_version = (3,0)
 cur_version = sys.version_info
 
-
-def required:
-    (req_version)
-def available:
-    (cur_version)
-
 if cur_version < req_version:
     longLine()
     print("You are using the wrong version of Python.")
     longLine()
-    print("Your interpretor is " + str(available) + " instead of at least " + str(required) + ".")
+    print("Your interpretor is using Python 2.7 instead of Python 3.")
     wait(2)
     print("                                       ")
     quit()
@@ -80,5 +74,5 @@ mode = getMode()
 message = getMessage()
 key = getKey()
 
-print("Here's your translated text:")
+print("Here's your message:")
 print(getTranslatedMessage(mode, message, key))
