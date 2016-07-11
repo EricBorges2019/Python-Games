@@ -1,5 +1,32 @@
 # Caesar Cipher
 
+import time; import random; import sys;
+# import for later
+
+def longLine():
+    print('-------------------------------------------------------')
+def wait(delayTime):
+    time.sleep(delayTime)
+req_version = (3,0)
+cur_version = sys.version_info
+
+
+def required:
+    (req_version)
+def available:
+    (cur_version)
+
+if cur_version < req_version:
+    longLine()
+    print("You are using the wrong version of Python.")
+    longLine()
+    print("Your interpretor is " + str(available) + " instead of at least " + str(required) + ".")
+    wait(2)
+    print("                                       ")
+    quit()
+# check for correct version of Python
+
+
 MAX_KEY_SIZE = 26
 
 def getMode():
