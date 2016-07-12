@@ -1,36 +1,15 @@
-# Caesar Cipher
-
 import time; import random; import sys;
-# import for later
-
-def longLine():
-    print('-------------------------------------------------------')
-def wait(delayTime):
-    time.sleep(delayTime)
-req_version = (3,0)
-cur_version = sys.version_info
-
-if cur_version < req_version:
-    longLine()
-    print("You are using the wrong version of Python.")
-    longLine()
-    print("Your interpretor is using Python 2.7 instead of Python 3.5")
-    wait(2)
-    print("                                       ")
-    quit()
-# check for correct version of Python
-
 
 MAX_KEY_SIZE = 26
 
 def getMode():
     while True:
-        print('Do you wish to encrypt or decrypt a message?')
+        print('Do you wish to encrypt, decrypt, or Brute-Force Decrypt a message?')
         mode = input().lower()
-        if mode in 'encrypt e decrypt d'.split():
+        if mode in 'encrypt e decrypt d brute b'.split():
             return mode
         else:
-            print('Enter either "encrypt" or "e" or "decrypt" or "d".')
+            print('Enter either "encrypt", "e", "decrypt", "d", "brute", or "b".')
 
 def getMessage():
     print('Enter your message:')
@@ -72,7 +51,12 @@ def getTranslatedMessage(mode, message, key):
 
 mode = getMode()
 message = getMessage()
-key = getKey()
+if mode[O] != 'b':
+    key = getKey()
 
 print("Here's your message:")
-print(getTranslatedMessage(mode, message, key))
+if mode[O] != 'b':
+    print(getTranslatedMessage(mode, message, key))
+else:
+    for key in range(1, MAX_KEY_SIZE + 1):
+        print(key, getTranslatedMessage('decrypt', message, key))
