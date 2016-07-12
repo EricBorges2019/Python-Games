@@ -51,11 +51,11 @@ def getTranslatedMessage(mode, message, key):
 
 mode = getMode()
 message = getMessage()
-if mode[O] != 'b':
+if mode[0] != 'b':
     key = getKey()
 
 print("Here's your message:")
-if mode[O] != 'b':
+if mode[0] != 'b':
     print(getTranslatedMessage(mode, message, key))
 else:
     for key in range(1, MAX_KEY_SIZE + 1):

@@ -1,6 +1,6 @@
 import time; import random; import sys; import vcheck
 # import for later code
-
+checkVersion()
 def displayIntro():
     print('You are in a land full of dragons.')
     wait(2)
