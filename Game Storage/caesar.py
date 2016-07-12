@@ -14,7 +14,7 @@ if cur_version < req_version:
     longLine()
     print("You are using the wrong version of Python.")
     longLine()
-    print("Your interpretor is using Python 2.7 instead of Python 3.")
+    print("Your interpretor is using Python 2.7 instead of Python 3.5")
     wait(2)
     print("                                       ")
     quit()
