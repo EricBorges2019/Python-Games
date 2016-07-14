@@ -1,4 +1,4 @@
-import time; import random; import sys;
+import time; import random; import sys; import .vcheck
 
 MAX_KEY_SIZE = 26
 
