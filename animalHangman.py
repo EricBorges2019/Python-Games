@@ -1,4 +1,4 @@
-import time; import random; import sys; import vcheck
+import time; import random; import sys; import .vcheck
 # import for later code
 
 HANGMANPICS = ['''
