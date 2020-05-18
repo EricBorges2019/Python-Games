@@ -17,7 +17,7 @@ if cur_version < req_version:
 guessesTaken = 0
 print('										  ')
 print('Hello there!')
-wait(1)
+#wait(1)
 #delay
 
 print('What is your name? (type name)')
