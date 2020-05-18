@@ -8,9 +8,9 @@ cur_version = sys.version_info
 if cur_version < req_version:
 
 	print("You are using an outdated version of Python.")
-	longLine()
-	wait(2)
-	print("									   ")
+# 	longLine()
+# 	wait(2)
+# 	print("									   ")
 	quit()
 # check for correct version of Python
 
@@ -22,21 +22,21 @@ wait(1)
 
 print('What is your name? (type name)')
 playerName = input()
-wait(2)
+# wait(2)
 
 print('Glad to meet you, ' + playerName + '!')
-wait(2)
+# wait(2)
 
 number = random.randint(2, 19)
 print('I am thinking of a number between 1 and 20.')
-wait(2)
+# wait(2)
 
 guessesLeft = 6 - guessesTaken
 guessesLeft = str(guessesLeft)
-wait(2)
+# wait(2)
 
 print('You have ' + guessesLeft + ' guesses left.')
-wait(2)
+# wait(2)
 
 while guessesTaken < 6:
 	print('Type in your guess!')
