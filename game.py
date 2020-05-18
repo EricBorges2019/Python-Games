@@ -1,4 +1,4 @@
-import time; import random; import sys;
+import time; import sys;
 # import for later code
 
 def longLine():
