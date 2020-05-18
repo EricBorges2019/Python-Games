@@ -200,7 +200,7 @@ def getPlayerMove(board, playerTile):
         if len(move) == 2 and move[0] in DIGITS1TO8 and move[1] in DIGITS1TO8:
             x = int(move[0]) - 1
             y = int(move[1]) - 1
-            if isValidMove(board, playerTile, x, y) == False:
+            if isValidMove(board, playerTile, x, y) is False:
                 continue
             else:
                 break
